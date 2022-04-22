@@ -1,0 +1,1 @@
+kubectl delete secrets/postgresql-secret
