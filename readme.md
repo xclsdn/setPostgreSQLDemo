@@ -1,3 +1,5 @@
+This is demo project to install PostGreSQL
+
 ### requirement
 
 We would like to produce a Go/Python/Bash CLI that automates deployment of a Postgres database to an existing Kubernetes cluster, potentially with the capability to tweak a couple parameters of the Postgres configuration. Feel free to include any open-source components you wish in the solution.
@@ -31,8 +33,9 @@ Solution step
 
 Tips.
 
-set username and password
-Beacause in Secret file, the item need encoded in Base64, so use the command in bash to get base64-encoded secret
-echo -n "username" | base64
+Before install, the script will show what components will add or delete, you pree y to contiune or cancle.
+
+Usualy you can use `kubectl diff -f [filename].yaml` to see wheathe it is your want before use `kubectl apply -f`
+
 
 
